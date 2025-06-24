@@ -1,21 +1,37 @@
- # Python/Django
+# Python bytecode
 *.pyc
 __pycache__/
+
+# Base de datos SQLite
 *.sqlite3
 db.sqlite3
+
+# Archivos de medios y estáticos (ajusta si usas otro sistema)
 media/
 staticfiles/
+
+# Logs y traducciones
 *.log
 *.pot
 *.mo
+
+# Entornos virtuales
 .env
 venv/
 env/
 .venv/
+
+# IDEs y editores
 .idea/
 .vscode/
+
+# Archivos swap y sistema
 *.swp
 *.swo
 .DS_Store
 Thumbs.db
 
+# Distribuciones y empaquetados
+dist/
+build/
+*.egg-info/
