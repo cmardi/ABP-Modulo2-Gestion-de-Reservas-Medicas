@@ -1,16 +1,15 @@
-import LoginForm from '../components/LoginForm';
-import { useNavigate } from 'react-router-dom';
+import LoginForm from "../components/LoginForm";
 
 function Login() {
-  const navigate = useNavigate();
-
-  const handleLoginSuccess = () => {
-    navigate('/reservas'); // 👉 Cambia aquí
-  };
-
   return (
-    <div>
-      <LoginForm onLogin={handleLoginSuccess} />
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-100 to-green-100">
+      <div className="bg-white rounded-2xl p-8 shadow-xl max-w-sm w-full">
+        <h1 className="text-2xl font-bold text-center text-gray-700">Inicia Sesión</h1>
+        <p className="text-gray-500 text-center mt-2">Accede para gestionar tus reservas</p>
+        <div className="mt-4">
+          <LoginForm />
+        </div>
+      </div>
     </div>
   );
 }
